@@ -1,0 +1,126 @@
+html, body{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-container{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+}
+
+.container{
+  flex: 1;
+  padding-bottom: 50px;
+}
+
+/* General App Styling */
+.App {
+  text-align: center;
+}
+
+/* Logo Styling */
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.App-logo:hover {
+  transform: scale(1.05);
+}
+
+/* Animation for Logo */
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Header Styling */
+.App-header {
+  background: linear-gradient(45deg, #282c34, #3a3f47);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(12px + 2vmin);
+  color: #f8f8f8;
+  padding: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.App-header:hover {
+  background: linear-gradient(45deg, #1f232a, #31363e);
+}
+
+/* Link Styling */
+.App-link {
+  color: #61dc53;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.2s ease-in-out;
+}
+
+.App-link:hover {
+  color: #21a1f1;
+  transform: scale(1.1);
+}
+
+/* Footer Styling */
+.App-footer {
+  background-color: #282c34;
+  padding: 15px;
+  color: white;
+  text-align: center;
+  font-size: 0.9rem;
+  border-top: 2px solid #61dc53;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .App-header {
+    font-size: calc(10px + 2vmin);
+    padding: 15px;
+  }
+
+  .App-footer {
+    font-size: 0.8rem;
+  }
+}
+
+
+
+
+
+:root {
+  --bg-color: white;
+  --text-color: black;
+}
+
+[data-theme='dark'] {
+  --bg-color: #121212;
+  --text-color: #f5f5f5;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+

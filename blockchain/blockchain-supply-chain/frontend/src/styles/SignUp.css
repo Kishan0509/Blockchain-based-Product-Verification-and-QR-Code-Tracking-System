@@ -1,0 +1,120 @@
+.SignUp-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.SignUp-card {
+  background: #ffffff;
+  padding: 50px 40px;
+  border-radius: 14px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 100%;
+  max-width: 420px;
+  margin: 150px auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.SignUp-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.SignUp-card h2 {
+  margin-bottom: 30px;
+  color: #333;
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.SignUp-card input,
+.SignUp-card select {
+  /* width: 100%; */
+  width: 93%;
+  padding: 14px;
+  margin: 10px 0 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+  background-color: #fefefe;
+}
+
+.SignUp-card input:focus,
+.SignUp-card select:focus {
+  border-color: #4b6cb7;
+  outline: none;
+}
+
+.SignUp-card button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, #0052cc, #003d99);
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+  box-shadow: 0 6px 15px rgba(0, 82, 204, 0.2);
+}
+
+.SignUp-card button:hover {
+  background: linear-gradient(135deg, #003d99, #002a70);
+  transform: scale(1.02);
+}
+
+.SignUp-card button:disabled {
+  background: #bfc5d2;
+  cursor: not-allowed;
+}
+
+.success-message {
+  color: #28a745;
+  font-size: 0.95rem;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.error-message {
+  color: #dc3545;
+  font-size: 0.95rem;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.SignUp-card p {
+  margin-top: 20px;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.SignUp-card a {
+  color: #0052cc;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.SignUp-card a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .SignUp-card {
+    padding: 40px 25px;
+  }
+
+  .SignUp-card h2 {
+    font-size: 1.6rem;
+  }
+}

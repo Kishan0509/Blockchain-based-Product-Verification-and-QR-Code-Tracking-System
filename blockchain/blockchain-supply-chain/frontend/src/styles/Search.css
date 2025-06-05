@@ -1,0 +1,290 @@
+.search-container {
+  text-align: center;
+  padding: 25px;
+  max-width: 600px;
+  margin: 150px auto;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.search-container:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 8px 22px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  font-size: 1.9rem;
+  color: #2e3192;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+p {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.form-group input {
+  width: 100%;
+  max-width: 420px;
+  padding: 12px;
+  border: 2px solid #d1d1d1;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #008CBA;
+  box-shadow: 0px 0px 5px rgba(0, 140, 186, 0.5);
+}
+
+.error-message {
+  color: #dc3545;
+  font-weight: bold;
+  margin-top: 12px;
+  font-size: 1rem;
+}
+
+/* Product Details Section */
+.product-details {
+  margin-top: 20px;
+  padding: 18px;
+  border-radius: 10px;
+  background: #f0faff;
+  border-left: 6px solid #008CBA;
+  text-align: left;
+  box-shadow: 0px 4px 10px rgba(0, 140, 186, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-details:hover {
+  transform: scale(1.02);
+}
+
+.product-details h3 {
+  color: #28a745;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.product-details p {
+  margin: 5px 0;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #222;
+}
+
+/* Buttons */
+button {
+  background: linear-gradient(135deg, #008CBA, #0056b3);
+  color: white;
+  font-size: 1rem;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-weight: bold;
+  margin-top: 15px;
+  display: inline-block;
+  box-shadow: 0px 4px 12px rgba(0, 140, 186, 0.3);
+}
+
+button:hover {
+  background: linear-gradient(135deg, #0056b3, #004494);
+  transform: scale(1.05);
+  box-shadow: 0px 6px 15px rgba(0, 140, 186, 0.4);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .search-container {
+    width: 90%;
+    padding: 35px;
+  }
+
+  .form-group input {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+
+.method-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+
+.scanner-container {
+  transition: opacity 0.3s ease-in-out;
+  opacity: 1;
+}
+
+.scanner-container.hidden {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.product-report {
+  margin-top: 30px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  background: #fefefe;
+  max-width: 700px;
+  margin: 30px auto;
+}
+
+.product-report table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.product-report td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+.print-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+
+.download-btn {
+  margin-top: 20px;
+  padding: 10px 15px;
+  background-color: #2a72d4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.download-btn:hover {
+  background-color: #1d5abf;
+}
+
+
+
+
+.product-details {
+  margin-top: 20px;
+  background-color: #f4f8fc;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #cce1f5;
+}
+
+.download-btn {
+  margin-top: 15px;
+  padding: 10px 15px;
+  background-color: #2a72d4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.download-btn:hover {
+  background-color: #1d5abf;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.progress-tracker {
+  display: flex;
+  align-items: center;
+  margin: 30px 0;
+  overflow-x: auto;
+}
+
+.progress-step {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-width: 120px;
+  text-align: center;
+  margin: 0 10px;
+}
+
+.step-circle {
+  width: 30px;
+  height: 30px;
+  background-color: #4caf50;
+  border-radius: 50%;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.step-info {
+  font-size: 12px;
+}
+
+.step-line {
+  position: absolute;
+  top: 15px;
+  right: -65px;
+  width: 130px;
+  height: 2px;
+  background-color: #ccc;
+  z-index: -1;
+}

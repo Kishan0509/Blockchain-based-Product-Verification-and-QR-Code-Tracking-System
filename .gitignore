@@ -1,0 +1,5 @@
+# Ignore all node_modules folders recursively
+**/node_modules/
+**/*.env
+backend/qr_codes/*
+!backend/qr_codes/.gitkeep 

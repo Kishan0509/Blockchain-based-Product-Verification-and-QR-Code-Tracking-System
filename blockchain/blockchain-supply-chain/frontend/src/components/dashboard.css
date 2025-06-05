@@ -1,0 +1,279 @@
+/* General Styles */
+.dashboard {
+  padding: 20px;
+  margin-top: 200px;
+  background-color: #f4f7fc;
+}
+
+.dashboard__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.dashboard__header h2 {
+  font-size: 24px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Stats Cards */
+.dashboard__cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  gap: 20px; /* added gap for spacing */
+}
+
+.dashboard__card {
+  background: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.2s ease-in-out; /* smooth scale on hover */
+}
+
+.dashboard__card:hover {
+  transform: scale(1.03);
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card__content h4 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #666;
+}
+
+.card__value {
+  font-size: 28px;
+  color: #333;
+  font-weight: bold;
+}
+
+.card__change {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin-top: 8px;
+  color: #666;
+}
+
+.card__change.positive {
+  color: #4bc0c0;
+}
+
+.card__change.negative {
+  color: #ff6384;
+}
+
+.card__icon {
+  font-size: 36px;
+  color: #4bc0c0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+}
+
+/* Chart Section */
+.dashboard__charts {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  gap: 20px; /* added gap */
+}
+
+.chart__card {
+  background: white;
+  border-radius: 10px;
+  width: 48%;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.chart__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.chart__header h4 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.chart__filter {
+  font-size: 14px;
+  padding: 6px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: white;
+  min-width: 140px;
+}
+
+.chart__container {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9;
+}
+
+.chart__container.pie {
+  height: 350px;
+}
+
+/* Products Table */
+.dashboard__products {
+  background: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 40px;
+  border-radius: 10px;
+}
+
+.products__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.products__header h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.products__filters {
+  display: flex;
+  gap: 10px;
+}
+
+.products__search {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.products__search input {
+  border: none;
+  outline: none;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.products__select select {
+  padding: 6px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  min-width: 140px;
+}
+
+.select-arrow {
+  font-size: 18px;
+  margin-left: 5px;
+}
+
+.products__table-wrapper {
+  overflow-x: auto;
+  margin-top: 20px;
+}
+
+/* Scrollbar styling for better UX */
+.products__table-wrapper::-webkit-scrollbar {
+  height: 8px;
+}
+
+.products__table-wrapper::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+.products__table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.products__table th,
+.products__table td {
+  padding: 12px 16px;
+  text-align: left;
+  font-size: 14px;
+  color: #555;
+}
+
+.products__table th {
+  background-color: #f4f7fc;
+  color: #333;
+}
+
+.products__table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.products__table tr:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.no-data {
+  text-align: center;
+  font-style: italic;
+  color: #ccc;
+}
+
+/* Status */
+.status {
+  font-size: 14px;
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 5px;
+}
+
+.status.updated {
+  background-color: #4bc0c0;
+  color: white;
+}
+
+.status.pending {
+  background-color: #ff6384;
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .dashboard__cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .dashboard__card {
+    width: 100%;
+  }
+
+  .dashboard__charts {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .chart__card {
+    width: 100%;
+  }
+}

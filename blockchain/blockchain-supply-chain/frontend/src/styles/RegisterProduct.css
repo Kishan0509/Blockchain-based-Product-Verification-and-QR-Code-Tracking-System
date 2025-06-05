@@ -1,0 +1,121 @@
+.register-container {
+  text-align: center;
+  padding: 25px;
+  max-width: 600px;
+  margin: 150px auto;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease-in-out;
+}
+
+.register-container:hover {
+  transform: translateY(-5px);
+}
+
+.register-container p {
+  margin-bottom: 50px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-group input {
+  display: block;
+  margin-top: 8px;
+  margin-bottom: 10px;
+  padding: 12px;
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid black;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #005f7e;
+  box-shadow: 0 0 5px rgba(0, 140, 186, 0.5);
+}
+
+/* Buttons */
+button {
+  margin-top: 20px;
+  background-color: #008CBA;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+button:hover {
+  background-color: #0072a3;
+  transform: scale(1.05);
+}
+
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.status-message {
+  margin-top: 12px;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.status-message.success {
+  color: #28a745;
+}
+
+.status-message.error {
+  color: #dc3545;
+}
+
+/* QR Code Section */
+.qr-section {
+  margin-top: 25px;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 12px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.qr-code {
+  margin-top: 10px;
+  border: 4px solid black;
+  padding: 12px;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.qr-code:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dashboard-container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .form-group input {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+  }
+}
