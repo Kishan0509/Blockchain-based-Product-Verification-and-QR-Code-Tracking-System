@@ -1,0 +1,104 @@
+/* Global Reset & Base Styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #e63232, #ff6b6b); /* Your enhanced gradient */
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+/* Ensure content starts below fixed navbar */
+body {
+  padding-top: 70px; 
+}
+
+/* Center page content (login, dashboard, etc.) */
+.main-content {
+  min-height: calc(100vh - 70px); /* Adjust for navbar */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Logo Styling */
+.logo {
+  width: 100px;
+  margin: 20px auto;
+  display: block;
+}
+
+/* Container Styling (Login, Dashboard, etc.) */
+.login-container,
+.dashboard-container {
+  background: #ffffff;
+  padding: 30px 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  width: 350px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.login-container:hover,
+.dashboard-container:hover {
+  transform: translateY(-3px);
+}
+
+/* Button Styling */
+button {
+  padding: 12px 20px;
+  background-color: #38dbde;
+  color: #111;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #1dc6c9;
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* Input Fields */
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  text-align: center;
+  transition: border-color 0.3s ease-in-out;
+}
+
+input:focus {
+  border-color: #38dbde;
+  outline: none;
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+  .login-container,
+  .dashboard-container {
+    width: 90%;
+    padding: 25px;
+  }
+
+  button {
+    width: 100%;
+  }
+}

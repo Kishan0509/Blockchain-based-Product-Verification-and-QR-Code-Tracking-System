@@ -1,0 +1,77 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "D:\\blockchain-supply-chain\\smart-contract\\contracts\\ProductTracking.sol": {
+      "lastModificationDate": 1741943018889,
+      "contentHash": "01effd219c89b558953044db6ddea5f0",
+      "sourceName": "contracts/ProductTracking.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ProductTracking"
+      ]
+    },
+    "D:\\deepseek project version 2\\deepseek project\\blockchain-supply-chain\\smart-contract\\contracts\\ProductTracking.sol": {
+      "lastModificationDate": 1742833719636,
+      "contentHash": "3dfb2137728a1d6bb0f7be4809bb5284",
+      "sourceName": "contracts/ProductTracking.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ProductTracking"
+      ]
+    }
+  }
+}

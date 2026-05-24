@@ -1,0 +1,47 @@
+{
+    "abi": [
+      {
+        "constant": false,
+        "inputs": [
+          { "name": "_serialNumber", "type": "string" },
+          { "name": "_name", "type": "string" },
+          { "name": "_manufacturer", "type": "string" },
+          { "name": "_productionDate", "type": "uint256" }
+        ],
+        "name": "registerProduct",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "constant": true,
+        "inputs": [{ "name": "_serialNumber", "type": "string" }],
+        "name": "getProduct",
+        "outputs": [
+          { "name": "serialNumber", "type": "string" },
+          { "name": "name", "type": "string" },
+          { "name": "manufacturer", "type": "string" },
+          { "name": "productionDate", "type": "uint256" },
+          { "name": "status", "type": "string" }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "constant": false,
+        "inputs": [
+          { "name": "_serialNumber", "type": "string" },
+          { "name": "_status", "type": "string" }
+        ],
+        "name": "updateProductStatus",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      }
+    ],
+    "networks": {
+      "1": {
+        "address": "0x5047845362912ae63904ad20d24691207e118a82ebe298fc67ea602ef7c29c0e"
+      }
+    }
+  }
